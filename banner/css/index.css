@@ -1,0 +1,100 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+.content-center {
+    border: 1px solid #cccccc;
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.left-content {
+    border-right: 1px solid #cccccc;
+    width: 25%;
+    height: inherit;
+    float: left;
+}
+
+.left-content-title {
+    width: 100%;
+    height: 60px;
+    background-color: dimgray;
+    color: white;
+}
+
+.p-center {
+    padding: 10px;
+}
+
+.left-content-title p + p {
+    margin-top: 5px;
+}
+
+.left-content-list {
+    background-color: darkgray;
+    font-size: 15px;
+    width: 100%;
+    height: 340px;
+    overflow: auto;
+}
+
+.left-content ul {
+    list-style: disc inside;
+}
+
+.left-content ul li {
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+ul li span {
+    padding: 0 2px;
+    color: dodgerblue;
+}
+
+.right-content {
+    width: 75%;
+    height: inherit;
+    float: left;
+    margin-left: -1px;
+    position: relative;
+}
+
+.banner-scroll {
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+}
+
+.banner-scroll img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.right-content ul {
+    list-style: none;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.right-content ul li {
+    margin: 5px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: inline-block;
+    cursor: pointer;
+}
+.right-content ul li.active-current {
+    background-color: darkorange;
+    color: white;
+}
